@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>CityClima</title>
+</head>
+<body>
+    <nav class="nav-bar flex-between">
+        <div class="search">
+            <input type="text" id="search-bar" placeholder="Busca tu ciudad">
+                <button id="btn" class="btn-search"><i class="fas fa-search" ></i></button>
+        </div>
+        <i class="fas fa-cloud-sun"></i>
+    </nav>
+    <header>
+        <div class="card" id="cd">
+            
+            <div class="weather" id="info">
+                <h2 class="city">Clima en Buenos Aires</h2>
+                <h1 class="temp">16°C</h1>
+                <div class="flex">
+                  <img src="http://openweathermap.org/img/wn/04n.png" alt="" class="icon"/>
+                  <div class="description">Nubes</div>
+                </div>  
+                <div class="humidity">Humedad: 88%</div>
+                <div class="wind">Viento: 4.63 km/h</div>
+            </div>
+    
+            <div class="footer">
+                <h5>Desarrollado por Sarvi Leandro</h5>  
+                <button class="btn-info"><a href="https://github.com/leandro-sarvi" target="_blank"><i class="fab fa-github in"></i></a></button>             
+            </div>
+        </div>  
+    </header>
+    <script src="https://kit.fontawesome.com/edd36e583e.js" crossorigin="anonymous"></script>
+    <script src="app.js"></script>
+</body>
+</html>
