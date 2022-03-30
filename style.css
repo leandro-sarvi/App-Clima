@@ -16,6 +16,7 @@ html {
   }
   .nav-bar{
       background: rgba(0, 0, 0, 0.5);
+      box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.75);
       padding: 1rem 0;
       position: fixed;
       width: 100%;
@@ -47,12 +48,14 @@ html {
       font-family: 'PT Sans', sans-serif;
   }
   h1{
-      font-size: 5rem;
+      font-size: 4rem;
       margin: 0;
+      text-shadow: 2px 2px 2px rgb(109, 109, 109);
   }
   h2{
       font-size: 2rem;
       margin: 0;
+      margin-bottom: 1rem;
   }
   h3{
       font-size: 1.5rem;
@@ -69,8 +72,8 @@ html {
   }
   .card{
       background-color: rgba(0, 0, 0, 0.541);
-      box-shadow: 0px 0px 10px 2px rgba(0,0,0,0.61);
-      padding: 2rem;
+      box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.75);
+      padding: 3rem 6rem;
       border-radius: 1rem;
       color: white;
       text-align: center;
@@ -140,4 +143,10 @@ z-index: 100;
       background-color: rgba(0, 0, 0, 0.582);
     padding: 1rem;
     border-radius: 100%;
+  }
+  .temp{
+    border: 1px solid rgba(0, 0, 0, 0.075);
+    box-shadow: 0px 0px 20px 0px rgba(10, 10, 10, 0.75);
+    border-radius: 100%;
+    padding: 3rem;
   }

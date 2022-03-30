@@ -28,16 +28,17 @@ async function search(query){
         }else{
             info.innerHTML=`
             <div class="weather">
+                    <div class="temp"> 
+                    <h1 >${celsius(data.main.temp)}°C</h1>
+                    <h3>min: ${celsius(data.main.temp_min)}°/</h3>
+                    <h3>max: ${celsius(data.main.temp_max)}°</h3>
+                    </div>
                     <h2 class="city">${data.name}, ${data.sys.country}</h2>
-                    <h1 class="temp">${celsius(data.main.temp)}°C</h1>
                     <div class="flex">
                       <img src="http://openweathermap.org/img/wn/${data.weather[0].icon}.png" alt="" class="icon"/>
                       <div class="description">${data.weather[0].description}</div>
                     </div>  
-                    <div class="flex">
-                    <h3>min: ${celsius(data.main.temp_min)}°</h3>
-                    <h3>max: ${celsius(data.main.temp_max)}°</h3>
-                    </div>
+                    
                     <h3>Humedad: ${data.main.humidity}%</h3>
                     <h3>Presión: ${data.main.pressure}hPa</h3>
                     <h3><i class="fas fa-wind"></i>: ${data.wind.speed} km/h</h3>
